@@ -17,9 +17,14 @@ const Side = (props) => {
 		}
 	};
 	return (
-		<div>
+		<div
+			style={{
+				color: 'white',
+				margin: '5vh 0 0 0',
+			}}
+		>
 			{!data ? (
-				<h4>Select a fire</h4>
+				<h2 style={{ textAlign: 'center' }}>Click or Tap for More Details</h2>
 			) : (
 				<List
 					primaryKey="name"
@@ -30,7 +35,7 @@ const Side = (props) => {
 							name: 'Discovered',
 							// percent: Date(data.FireDiscoveryDateTime).toLocaleString(),
 							percent: moment(data.FireDiscoveryDateTime).format(
-								'MMMM Do YYYY, h:mm:ss a'
+								'MMM DD YYYY, h:mm a'
 							),
 						},
 						{ name: 'Desc.', percent: data.IncidentShortDescription },
@@ -73,6 +78,18 @@ const Side = (props) => {
 											: 'unknown'
 									}
 								/>
+							),
+						},
+						{
+							name: 'Responders',
+							percent: data.TotalIncidentPersonnel
+								? `${data.TotalIncidentPersonnel}🚨`
+								: 'Unknown',
+						},
+						{
+							name: 'Last Updated',
+							percent: moment(data.ModifiedOnDateTime_dt).format(
+								'MMM DD YYYY, h:mm a'
 							),
 						},
 					]}

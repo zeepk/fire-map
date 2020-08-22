@@ -14,7 +14,6 @@ export default function TheMap(props) {
 			.then((data) => setData(data));
 	}, []);
 	if (data && !fires) {
-		console.log(data);
 		const firesToPush = data.features.map((fireData) => {
 			return {
 				data: fireData.attributes,
@@ -22,6 +21,7 @@ export default function TheMap(props) {
 				lng: fireData.attributes.InitialLongitude,
 			};
 		});
+		props.toUpdateLastUpdated(data);
 		setFires(firesToPush);
 	}
 	console.log('rendering the map');

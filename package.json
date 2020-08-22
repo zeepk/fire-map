@@ -10,6 +10,8 @@
     "grommet": "^2.15.0",
     "moment": "^2.27.0",
     "polished": "^3.6.5",
+    "primeflex": "^2.0.0-rc.1",
+    "primereact": "^5.0.0-rc.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
