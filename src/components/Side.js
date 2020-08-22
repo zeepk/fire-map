@@ -1,5 +1,6 @@
 import React from 'react';
 import { List, Button } from 'grommet';
+
 import moment from 'moment';
 const Side = (props) => {
 	const data = props.data;
@@ -20,7 +21,7 @@ const Side = (props) => {
 		<div
 			style={{
 				color: 'white',
-				margin: '5vh 0 0 0',
+				margin: '0vh 0 0 0',
 			}}
 		>
 			{!data ? (

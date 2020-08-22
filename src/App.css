@@ -2,3 +2,33 @@
 	background-color: #282c34;
 	min-height: 100vh;
 }
+
+/* footer stuff */
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	padding: 5px 0;
+	background-color: rgb(104, 104, 104);
+	font-size: 16px;
+}
+.made-by {
+	display: inline;
+	margin: 0 !important;
+	color: white;
+}
+.footer-link {
+	display: inline;
+	color: white !important;
+	padding: 5px 0;
+}
+.footer-ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+.footer-li {
+	padding-right: 2vw;
+	float: left;
+}

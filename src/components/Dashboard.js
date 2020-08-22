@@ -20,7 +20,7 @@ const Dashboard = () => {
 						toUpdateLastUpdated={updateLastUpdated}
 					/>
 				</div>
-				<div className="p-col-12 p-md-6 p-lg-3">
+				<div style={{ height: '70vh' }} className="p-col-12 p-md-6 p-lg-3">
 					<Side data={sideData} />
 				</div>
 			</div>
