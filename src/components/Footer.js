@@ -19,13 +19,13 @@ const Footer = (props) => {
 						<span role="img" aria-label="laptop">
 							💻
 						</span>
-						Version 1.0.0
+						v1.0.0
 					</p>
 				</li>
 				<li className="footer-li"></li>
 				<li className="footer-li">
 					<p className="made-by">
-						{'Contact me for suggestions! '}
+						{'Made by '}
 						<a
 							className="footer-link"
 							href="https://twitter.com/matthughes2112"

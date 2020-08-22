@@ -26,7 +26,7 @@ export default function TheMap(props) {
 	}
 	console.log('rendering the map');
 	return (
-		<div style={{ height: '90%', width: '90%', margin: '0 auto' }}>
+		<div style={{ height: '100%', width: '100%', margin: '0 auto' }}>
 			<GoogleMapReact
 				bootstrapURLKeys={{
 					key: 'AIzaSyDHmrfNeDYuDpXD6AmqiOH46XD2Ago9Sag',

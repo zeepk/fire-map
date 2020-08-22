@@ -21,7 +21,7 @@ const Side = (props) => {
 		<div
 			style={{
 				color: 'white',
-				margin: '0vh 0 0 0',
+				padding: '0 0 20vh 0',
 			}}
 		>
 			{!data ? (
