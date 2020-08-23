@@ -42,7 +42,7 @@ const Side = (props) => {
 						{ name: 'Desc.', percent: data.IncidentShortDescription },
 						{ name: 'State', percent: data.POOState.split('-')[1] },
 						{ name: 'County', percent: data.POOCounty },
-						{ name: 'Cause', percent: data.FireCause },
+						{ name: 'Cause', percent: data.FireCauseGeneral || data.FireCause },
 						{
 							name: 'Severity',
 							percent: (
@@ -86,6 +86,16 @@ const Side = (props) => {
 							percent: data.TotalIncidentPersonnel
 								? `${data.TotalIncidentPersonnel}🚨`
 								: 'Unknown',
+						},
+						{
+							name: 'Arces',
+							percent: data.DailyAcres,
+						},
+						{
+							name: 'Sq Miles',
+							percent: data.DailyAcres
+								? Math.round((data.DailyAcres / 640) * 10) / 10
+								: '',
 						},
 						{
 							name: 'Last Updated',
